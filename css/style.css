@@ -1,0 +1,169 @@
+body{
+  width: 100%;
+}
+header{
+  width: 96%;
+  margin: auto;
+}
+header h1{
+  font-size: 40px;
+  font-weight: bold;
+}
+.screen{
+  position: relative;
+}
+.endShow{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.3);
+  font-size: 7rem;
+  color: #feb4bd;
+  font-weight: bold;
+  z-index: 100;
+}
+.endHide{
+  display: none;
+}
+.endTxtWrap{
+  position: relative;
+}
+.endTxtWrap img{
+  position: absolute;
+  top: -30px;
+  right: -24px;
+  transform: rotate(36deg);
+}
+.status{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 96%;
+  margin: auto;
+  padding: 0 2%;
+  text-align: right;
+  background-color: #feb6be;
+  color: #FFF;
+}
+.girlLevel{
+  display: inline-block;
+  font-weight: bold;
+  margin: 0 6px;
+}
+.progressbar{
+  -webkit-appearance: none;
+  width: 60%;
+  height: 24px;
+  margin: 20px 0;
+}
+progress[value] {
+  color:#fff;
+} 
+/* IE10 */
+progress::-webkit-progress-bar-value {
+  background: #ffced3;
+}
+progress::-webkit-progress-value {
+  background:#ffced3;
+}
+progress::-moz-progress-bar {
+  background:#ffced3;
+}
+progress::-webkit-progress-bar{
+  background-color: #FFF;
+  border:2px solid;
+  border-radius: 2px;
+}
+.girl{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 96%;
+  height: 65vh;
+  margin: auto;
+  text-align: center;
+}
+.girl img{
+  opacity: 0.7;
+}
+.girlStateArea{
+  display: flex;
+  align-items: flex-end;
+  width: 300px;
+  margin: 0 auto;
+  text-align: left;
+}
+.girlState{
+  position: relative;
+  display: inline-block;
+  min-width: 100px;
+  padding: 5px 1rem;
+  color: #ffb6be;
+  font-weight: bold;
+  border: 2px solid #ffb6be;
+  border-radius: 5px;
+}
+.girlState::before{
+  content: "";
+  position: absolute;
+  bottom: -17px;
+  left: 115px;
+  margin-left: -9px;
+  border: 6px solid transparent;
+  border-top: 13px solid #FFF;
+  z-index: 2;
+}
+.girlState::after{
+  content: "";
+  position: absolute;
+  bottom: -23px;
+  left: 115px;
+  margin-left: -10px;
+  border: 7px solid transparent;
+  border-top: 15px solid #ffb6be;
+  z-index: 1;
+}
+.btn_area{
+  width: 96%;
+  position: fixed;
+  bottom: 0;
+  padding: 28px 2%;
+  text-align: center;
+  background-color: #feb6be;
+}
+.give_btn {
+  display : inline-block;
+  width : 70px;
+  height : 70px;
+  margin: 0 20px 0 0;
+  padding: 3px;
+  font-size : 1rem;
+  text-align : center;
+  background-color : #ffb6be;
+  border-radius : 50%;
+  overflow: hidden;
+  -moz-transition: -moz-transform 0.5s linear;
+  -webkit-transition: -webkit-transform 0.5s linear;
+  -o-transition: -o-transform 0.5s linear;
+  -ms-transition: -ms-transform 0.5s linear;
+  transition: transform 0.5s linear;
+  border: 3px solid #fef1f3;
+}
+.give_btn:last-of-type{
+  margin: 0;
+}
+.give_btn img {
+  width : 80%;
+  padding : 5px 10%;
+}
+.infoTxt{
+  width: 320px;
+  margin: 20px auto;
+  padding: 10px 0;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+}
