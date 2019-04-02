@@ -8,6 +8,40 @@ import money from '../img/money.png';
 import toy from '../img/toy.png';
 import style from '../css/style.css';
 
+//プレゼント
+const giveData = [
+  { 
+    name: 'meat',
+    img: meat,
+    score: 15
+  },
+  {
+    name: 'dress',
+    img: dress,
+    score: 30
+  },
+  {
+    name: 'cosme',
+    img: cosme,
+    score: 20
+  },
+  {
+    name: 'sweets',
+    img: sweets,
+    score: 25
+  },
+  {
+    name: 'toy',
+    img: toy,
+    score: 20
+  },
+  {
+    name: 'money',
+    img: money,
+    score: 500
+  }
+];
+
 export class GiveItem extends React.Component{
 
   constructor (props){
@@ -75,38 +109,4 @@ export class GiveItem extends React.Component{
     </div>;
   }
 }
-
-const giveData = [
-  { 
-    name: 'meat',
-    img: meat,
-    score: 15
-  },
-  {
-    name: 'dress',
-    img: dress,
-    score: 30
-  },
-  {
-    name: 'cosme',
-    img: cosme,
-    score: 20
-  },
-  {
-    name: 'sweets',
-    img: sweets,
-    score: 25
-  },
-  {
-    name: 'toy',
-    img: toy,
-    score: 20
-  },
-  {
-    name: 'money',
-    img: money,
-    score: 500
-  }
-];
-
 
