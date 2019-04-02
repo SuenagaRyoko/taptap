@@ -17,6 +17,7 @@ export class App extends React.Component{
     this.girlMaxLevel = 2;
   }
 
+  //プレゼントスコアを取得しステータスバーへ反映、レベル管理、エンドフラグの管理
   updateScore(e){
     let getScore = Number(e.currentTarget.dataset.score);
     this.setState({
