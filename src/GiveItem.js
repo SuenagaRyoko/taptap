@@ -59,6 +59,7 @@ export class GiveItem extends React.Component{
     this.changeItem = this.changeItem.bind(this);
   }
 
+  //ボタンをランダムで選択
   selectItem () {
     let rand = Math.floor(Math.random() * 501);
     if (rand >= 0 && rand <= 100 ) {
@@ -76,6 +77,7 @@ export class GiveItem extends React.Component{
     }
   }
 
+  //ボタン変更・ダブルクリックの防止
   changeItem(e){
     if(!this.count){
       ++this.count;
