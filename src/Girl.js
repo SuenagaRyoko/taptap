@@ -3,6 +3,14 @@ import { App } from './App';
 import style from '../css/style.css';
 import girl from '../img/alice.gif';
 
+//女の子の台詞
+const feeling = [
+  '・・・・・・・・',
+  '貢ぎすぎじゃない？',
+  'ありがと',
+  'だいすき！'
+];
+
 export class Girl extends React.Component{
 
   constructor (props){
@@ -22,10 +30,3 @@ export class Girl extends React.Component{
     </div>;
   }
 }
-
-const feeling = [
-  '・・・・・・・・',
-  '貢ぎすぎじゃない？',
-  'ありがと',
-  'だいすき！'
-];
