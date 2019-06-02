@@ -82,12 +82,12 @@ export class GiveItem extends React.Component{
     if(!this.count){
       ++this.count;
       this.setState({
-      first: giveData[this.selectItem()],
-      second: giveData[this.selectItem()],
-      third: giveData[this.selectItem()],
-    });
-    this.props.updateScore(e);
-      setTimeout(()=>{
+        first: giveData[this.selectItem()],
+        second: giveData[this.selectItem()],
+        third: giveData[this.selectItem()],
+      });
+      this.props.updateScore(e);
+      setTimeout(function (){
         this.count = 0;
       },500);
     }else{
